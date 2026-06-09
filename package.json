@@ -2,21 +2,10 @@
   "name": "small-business-starter",
   "type": "module",
   "version": "0.1.0",
-  "description": "A minimal, fast, and fully customisable small-business website template built with Astro 6, Tailwind v4, and Playwright.",
+  "description": "Sparks Electrical Website",
   "author": "",
   "license": "MIT",
-  "keywords": [
-    "astro",
-    "astro-theme",
-    "astro6",
-    "tailwind",
-    "tailwindcss",
-    "small-business",
-    "starter",
-    "template",
-    "view-transitions",
-    "playwright"
-  ],
+  "keywords": ["astro", "tailwind"],
   "engines": {
     "node": ">=22.12.0"
   },
@@ -24,11 +13,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "test": "playwright test",
-    "test:ui": "playwright test --ui",
-    "test:perf": "playwright test tests/performance.spec.ts",
-    "test:report": "playwright show-report"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.1",
@@ -40,6 +25,9 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2"
+  },
+  "overrides": {
+    "vite": "^7.0.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
