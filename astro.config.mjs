@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import robotsTxt from 'astro-robots-txt';
 
 export default defineConfig({
-  site: 'https://www.example.com',
+  site: 'https://sparkselectrical.co.uk',
   output: 'static',
 
   integrations: [sitemap(), robotsTxt()],
@@ -38,11 +38,7 @@ export default defineConfig({
       cssMinify: 'lightningcss',
     },
   },
-});
 
-import { defineConfig } from 'astro/config';
-
-export default defineConfig({
   image: {
     service: {
       entrypoint: 'astro/assets/services/noop'
