@@ -9,30 +9,29 @@
  * everything comes from this file or brand.ts.
  * ─────────────────────────────────────────────────────────────────────────────
  */
-
 export const client = {
-  name: 'Small Business Starter',
-  email: 'hello@example.com',
-  phoneForTel: '555-867-5309',
-  phoneFormatted: '(555) 867-5309',
+  name: 'Sparks Electrical',
+  email: 'hello@sparkselectrical.co.uk',
+  phoneForTel: '01234 567890',
+  phoneFormatted: '01234 567 890',
   /** Business / contractor license number. Displayed in the header and footer
-   *  as a trust signal. Set to an empty string to hide it. */
-  license: 'Lic# 123456',
+   * as a trust signal. Set to an empty string to hide it. */
+  license: 'Electrician Lic# 12345678',
   address: {
-    lineOne: '123 Main Street',
-    lineTwo: 'Suite 100',
-    city: 'Denver',
-    state: 'CO',
-    zip: '80206',
-    country: 'US',
-    mapLink: 'https://maps.app.goo.gl/example',
+    lineOne: 'Unit 5, Industrial Estate',
+    lineTwo: '',
+    city: 'Your Town',
+    state: '',
+    zip: 'AB12 3CD',
+    country: 'UK',
+    mapLink: 'https://maps.google.com', // Replace with real Google Maps link
   },
   socials: {
     facebook: 'https://www.facebook.com/',
     instagram: 'https://www.instagram.com/',
-    google: 'https://www.google.com/maps',
+    google: 'https://www.google.com/maps', // Google Business Profile
   },
-  domain: 'https://www.example.com',
+  domain: 'https://sparkselectrical.co.uk',
 } as const;
 
 export type Client = typeof client;

@@ -14,12 +14,12 @@
 
 export const brand = {
   // ── Site Identity ──────────────────────────────────────────────────────────
-  name: 'Small Business Starter',
-  tagline: 'Professional service you can trust.',
+  name: 'Sparks Electrical',
+  tagline: 'A local electrical contractor you can trust.',
   description:
-    'A fast, mobile-first small-business website template built with Astro 6 and Tailwind v4. Fully customisable for any trade or service business.',
+    'Safe, reliable electrical installations, repairs & maintenance for homes and businesses.',
   url: 'https://example.com',
-  locale: 'en_US',
+  locale: 'en_GB',
 
   // ── Fonts ──────────────────────────────────────────────────────────────────
   // To swap fonts: change the `name` values here AND update astro.config.mjs

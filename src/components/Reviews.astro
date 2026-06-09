@@ -5,31 +5,42 @@ interface Review {
   location: string;
   rating?: number;
 }
-
 interface Props {
   topper?: string;
   heading?: string;
   reviews?: Review[];
 }
-
 const {
   topper = 'Testimonials',
   heading = 'What our customers say',
   reviews = [
-    { quote: 'They showed up on time, explained everything clearly, and finished the job faster than expected. Best service experience we\'ve had.', name: 'Sarah M.', location: 'Denver, CO', rating: 5 },
-    { quote: 'Honest pricing and top-notch work. I\'ve used them for three different projects now and they never disappoint.', name: 'James R.', location: 'Aurora, CO', rating: 5 },
-    { quote: 'Our emergency call was answered in minutes. They had the problem fixed before dinner. Truly dependable.', name: 'Linda K.', location: 'Lakewood, CO', rating: 5 },
+    { 
+      quote: 'Showed up on time, explained everything clearly, and did a perfect job on our full rewire. Very professional and tidy.', 
+      name: 'Sarah M.', 
+      location: 'Your Town', 
+      rating: 5 
+    },
+    { 
+      quote: 'Fixed a dangerous fault in our kitchen within an hour of calling. Honest pricing and excellent service.', 
+      name: 'James R.', 
+      location: 'Nearby Town', 
+      rating: 5 
+    },
+    { 
+      quote: 'Installed our EV charger quickly and safely. Great communication throughout. Would highly recommend.', 
+      name: 'Linda K.', 
+      location: 'Your Town', 
+      rating: 5 
+    },
   ],
 } = Astro.props;
 ---
-
 <section class="bg-surface py-section">
   <div class="mx-auto max-w-site px-4 sm:px-6">
     <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
       <span class="text-topper font-bold uppercase tracking-widest text-accent">{topper}</span>
       <h2 class="mt-2 font-heading text-h2 font-bold uppercase text-text">{heading}</h2>
     </div>
-
     <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3" role="list">
       {reviews.map(({ quote, name, location, rating = 5 }) => (
         <li class="flex flex-col rounded-lg border border-border bg-background p-6 shadow-sm">
@@ -46,11 +57,9 @@ const {
               </svg>
             ))}
           </div>
-
           <blockquote class="flex-1 text-text-muted leading-relaxed">
             &ldquo;{quote}&rdquo;
           </blockquote>
-
           <div class="mt-4 border-t border-border pt-4">
             <p class="font-semibold text-text">{name}</p>
             <p class="text-sm text-text-muted">{location}</p>
