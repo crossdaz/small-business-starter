@@ -39,14 +39,3 @@ export default defineConfig({
     },
   },
 });
-
-import { defineConfig } from 'astro/config';
-
-export default defineConfig({
-  image: {
-    // Use noop service to bypass Sharp during build
-    service: {
-      entrypoint: 'astro/assets/services/noop'
-    }
-  }
-});
